@@ -5,7 +5,7 @@
 
 #  1) Added column piwik_online to system table
 ALTER TABLE `system`
-    ADD COLUMN `piwik_online` TINYINT(1) UNSIGNED AFTER `piwik_id`;
+    ADD COLUMN `piwik_online` TINYINT(1) UNSIGNED DEFAULT '0' AFTER `piwik_id`;
 
 #  2) Set piwik_online column for system table entries having a piwik_id
 UPDATE `system` SET `piwik_online`=1 where `piwik_id` != '';
