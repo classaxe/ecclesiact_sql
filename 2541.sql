@@ -1,6 +1,8 @@
 # 2541.sql
 #  1) Set version information
 
+SET SQL_SAFE_UPDATES=0;
+
 #  1) Set version information
 UPDATE `system` SET `system`.`db_version` =  '2541';
 UPDATE `system` SET `system`.`db_cs_target` = '422e4761';
@@ -81,3 +83,5 @@ UPDATE `system` SET `system`.`reports_detail` =
     'theme_accent_2|582376101|e4078b1b||19f337a2||15ede43f, theme_accent_3|2134717818|41df4aab||aaac63a7||10c29841, theme_accent_4|290642889|6ba260||c7275d0||9c2cb60b, theme_accent_5|920246873|5e431c2e||4a0aba67||874b13ac, theme_banner|1242434882|84fc02ad||73da9400||b0bcb516, tickets|2119451158|d91d0049||2ec563f1|4d86006a|4d95f1a2, treb_view_listings|622536265|f4074657|9eafb08c|7ec913f7|ebfc28a8|825ebbd3, treb_view_room_listings|979751350|2315e738||a4f04e3b||eefaf240, ',
     'user|6|c175b6cc|447dddd0|4b02b208|d74bc1cc|a0d03231, User Lookup|1599889923|281d53ee||20e5b6d0||c8b7651f, user_activity_orders|1178493635|b36d6dd6||||8f87813a, view_credit_memos_for_order|118589083|2133a231||f9e5796||205c5b98, view_registered_events_for_order|1040680974|82ace8e4||fc18f7bf||4cf50b44, visitor_stats|1327825126|883bba55||||f11fa627, widget|1861367917|a1ec1ee4||9fc2dedc|c7c789d5|85a83add, your_cases|36207315|bda8af82|d3f30135|5a1db2cf|7ecea621|866be436, ',
     'your_order_history|581815015|34aabc0b||4b8ed1||19438013');
+
+SET SQL_SAFE_UPDATES=1;
